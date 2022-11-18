@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Персональный сайт Алексея Денисова</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<style>
+#bg-wrap {
+	position: relative;
+	left: 0;
+	top: -600px;
+}
+
+#bg-wrap2 {
+	position: relative;
+	top: 400px;
+	transform: scaleY(0.65);
+}
+
+#Gradient1 {
+  position: relative;
+  left: 0;
+  top: 1000px;
+}
+#Gradient2 {
+  position: relative;
+  left: 0;
+  top: 1000px;
+}
+#Gradient3 {
+  position: relative;
+  left: 0;
+  top: 1000px;
+}
+#Gradient4 {
+  position: relative;
+  left: 0;
+  top: 1000px;
+}
+#Gradient5 {
+  position: relative;
+  left: 0;
+  top: 1000px;
+}
+#Gradient6 {
+  position: relative;
+  left: 0;
+  top: 1000px;
+}
+
+#l{
+  	position: absolute;
+	left: 500px;
+	top: 50px;
+}
+
+#maintext {
+  z-index: 100;
+  position: absolute;
+  color: black;
+  font-size: 72px;
+  left: 80px;
+  top: 80px;
+  font-family: Mak, Misto, Lobster, "Object Sans"
+}
+
+#mysurname {
+  z-index: 100;
+  position: absolute;
+  color: black;
+  font-size: 72px;
+  left: 80px;
+  top: 230px;
+  font-family: Misto, Lobster, "Object Sans"
+}
+
+#talk {
+  z-index: 300;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  left: 80px;
+  top: 400px;
+  word-wrap: break-word;
+  width: 450px;
+  font-family: "Object Sans", Misto, Lobster
+}
+
+#myname {
+    position: absolute;
+    z-index: 100;
+	color: black;
+	font-size: 72px;
+	left: 113px;
+	top: 152px;
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    font-family: Misto, "Object Sans"
+}
+
+#myname:hover{
+	color: blue;
+}
+
+#talk2 {
+  z-index: 300;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  left: 80px;
+  top: 500px;
+  word-wrap: break-word;
+  width: 450px;
+  font-family: "Object Sans", Misto, Lobster
+}
+
+#vk{
+	color: black;
+  	position: absolute;
+	left: 80px;
+	top: 690px;
+}
+
+#tg{
+  	position: absolute;
+	left: 130px;
+	top: 690px;
+}
+
+#gh{
+  	position: absolute;
+	left: 180px;
+	top: 690px;
+}
+
+.rotate-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weat-talk{
+	position: absolute;
+	left: 500px;
+  	top: 1050px;
+  	color: black;
+  	font-size: 36px;
+  	font-family: "Object Sans", Misto, Lobster;
+}
+
+#geom-talk{
+	position: absolute;
+	left: 500px;
+  	top: 1450px;
+  	color: black;
+  	font-size: 36px;
+  	font-family: "Object Sans", Misto, Lobster;
+}
+
+#des-talk{
+	position: absolute;
+	left: 500px;
+  	top: 1832px;
+  	color: black;
+  	font-size: 36px;
+  	font-family: "Object Sans", Misto, Lobster;
+}
+
+.change-weat {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  perspective: 1000px;
+  left: 80px;
+  top: 1000px;
+}
+.change-weat:hover .front-side-img {
+  transform: rotateY(180deg);
+}
+.change-weat:hover .back-side-img {
+  transform: rotateY(360deg);
+}
+
+.change-geom {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  perspective: 1000px;
+  left: 80px;
+  top: 1400px;
+}
+.change-geom:hover .front-side-img {
+  transform: rotateY(180deg);
+}
+.change-geom:hover .back-side-img {
+  transform: rotateY(360deg);
+}
+
+.change-des {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  perspective: 1000px;
+  left: 80px;
+  top: 1800px;
+}
+.change-des:hover .front-side-img {
+  transform: rotateY(180deg);
+}
+.change-des:hover .back-side-img {
+  transform: rotateY(360deg);
+}
+
+.front-side-img, .back-side-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  back-side-imgface-visibility: hidden;
+}
+
+.front-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back-side-img img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
+.back-side-img {
+  transform: rotateY(180deg);
+}
+
+#fishka {
+    position: absolute;
+    z-index: 100;
+	color: black;
+	font-size: 72px;
+	left: 45px;
+	top: 1650px;
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    font-family: Misto, "Object Sans"
+}
+
+#fishka:hover{
+	color: red;
+}
+
+#fishka3 {
+    position: absolute;
+    z-index: 100;
+	color: black;
+	font-size: 72px;
+	left: 45px;
+	top: 1250px;
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    font-family: Misto, "Object Sans"
+}
+
+#fishka3:hover{
+	color: red;
+}
+
+#gb-title{
+	position: relative;
+	z-index: 400;
+	opacity: 0.5;
+	color: white;
+	top: 2200px;
+	left: 240px;
+	font-size: 120px;
+	font-family: "Object Sans";
+}
+
+#gb-title:hover{
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	opacity: 1;
+}
+
+.form-control{
+	position: absolute;
+	left: 344px;
+	border: none;
+	transform: scale(2);
+	top: 2460px;
+	opacity: 0.5;
+	outline: none !important;
+	font-family: "Object Sans";
+}
+
+.form-control2{
+	position: absolute;
+	left: 344px;
+	border: none;
+	top: 2550px;
+	transform: scale(2);
+	opacity: 0.5;
+	outline: none !important;
+	resize: none;
+	font-family: "Object Sans";
+}
+
+#btn-otz{
+	position: absolute;
+	left: 250px;
+	top: 2660px;
+	filter: invert(1);
+	opacity: 0.5;
+}
+
+#btn-otz:hover{
+	-webkit-transition: all 1s ease;
+    transition: all 1s ease;
+	filter: invert(1);
+	opacity: 1;
+}
+
+.btn-otz-hide{
+    background: none;
+    border: none;
+}
+
+.card{
+	position: absolute;
+	border: none;
+	padding: 5px;
+	width: 510px;
+	height: 188px;
+	top: 2440px;
+	left: 700px;
+	overflow: scroll;
+	font-family: "Object Sans";
+}
+
+.card-header{
+	font-size: 48px;
+	font-style: italic;
+	color: white;
+}
+
+.post-text{
+	left: 0;
+	font-size: 24px;
+	color: white;
+}
+
+.blockquote-footer{
+	position: relative;
+	left: 0;
+	font-size: 14px;
+	color: white;
+	opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+opacity: 0.5;
+}
+
+::-webkit-scrollbar-track {
+border: 1px solid white;
+border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+background: white;
+border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: white;
+}
+
+
+.guestbook-all{
+	position: absolute;
+	top: 200px;
+}
+
+
+
+</style>
+<body>
+
+{% block content %}
+<main>
+    <div id="bg-wrap">
+	<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+	<defs>
+		<radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient7" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient8" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient9" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+	</defs>
+	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+	<animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+	<animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+	<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
+
+	</rect>
+	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+	<animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+	<animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+	<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
+	</rect>
+	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+	<animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+	<animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+	<animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
+	</rect>
+	<rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+	<rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+	</rect>
+	<rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+	</rect>
+	</svg>
+	</div>
+	<div id="bg-wrap2">
+	<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+	<defs>
+		<radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+		<radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+	</defs>
+	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+	<animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+	<animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+	<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
+
+	</rect>
+	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+	<animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+	<animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+	<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
+	</rect>
+	<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+	<animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+	<animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+	<animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
+	</rect>
+	<rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+	<rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+	</rect>
+	<rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+	</rect>
+	</svg>
+	</div>
+
+	<img id="l" src="static/alex3.png" alt="image here..." width=1000px height=1000px>
+
+	<div class="logo">
+		<a href="https://github.com/denisovalex" target="_blank" ><img id="gh" src = "static/github.png" width=30px height=30px /></a>
+		<a href="https://vk.com/yessoi" target="_blank" ><img id="vk" src = "static/vk.png" width=30px height=30px /></a>
+		<a href="https://t.me/yessoi" target="_blank" ><img id="tg" src = "static/telegram.png" width=30px height=30px /></a>
+	</div>
+
+	<div class="greeting">
+		<p id="maintext">Просто сайт</p>
+		<p id="myname">Алексея</p>
+		<p id="mysurname">Денисова</p>
+		<p id="talk">Меня зовут Лёша, мне 19 лет. Я учусь на МатМехе СПбГУ
+			на направлении Программная Инженерия.
+		</p>
+		<p id="talk2">На этом сайте вы можете ознакомиться с рядом проектов,
+			над которыми я успел поработать. А также можете оставить свой
+			отзыв — мне будет очень приятно.
+		</p>
+	</div>
+
+	<div class="rotate-block">
+		<a href="https://github.com/Stanislav-Sartasov/spsu-mm-se-programming/tree/Denisov-Alexey/Semester 2/Block 4/Task 7" target="_blank" >
+		    <div class="change-weat">
+				<div class="front-side-img"><img src="static/weat.png" alt=""/></div>
+				<div class="back-side-img"><img src="static/weat.png" alt=""/></div>
+			</div>
+		</a>
+		<p id="weat-talk">Оконное приложение, показывающее погоду в Санкт-Петербурге по данным нескольких источников.</p>
+
+		<p id="fishka3">***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***</p>
+
+		<a href="https://github.com/denisovalex/university-tasks/tree/main/Geometry%20Project" target="_blank" >
+			<div class="change-geom">
+				<div class="front-side-img"><img src="static/geom.png" alt=""/></div>
+				<div class="back-side-img"><img src="static/geom.png" alt=""/></div>
+			</div>
+		</a>
+			<p id="geom-talk">Эта программа вычисляет по трём заданным точкам фигуры в пространстве: куб, тетраэдр, правильная пирамида, а затем вычисляет их проекцию на ось XOY.</p>
+
+		<a href="https://www.figma.com/file/WQzTLk0iOEjx16TszxXo2MoH/Merchandise-Online-Shop?node-id=0:1&t=Xrv5rAVdqVBe0Cuj-1" target="_blank" >
+			<div class="change-des">
+				<div class="front-side-img"><img src="static/design.png" alt=""/></div>
+				<div class="back-side-img"><img src="static/design.png" alt=""/></div>
+			</div>
+		</a>
+			<p id="des-talk">Школьный проект по информатике: дизайн сайта интернет-магазина. Дизайн-макет выполнен в Figma, поэтому там даже можно что-то нажимать и перемещаться по страницам.</p>
+		</div>
+
+		<p id="fishka">***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***</p>
+
+	<div class="guestbook-all">
+		<h1 id="gb-title">Гостевая книжка</h1>
+
+			<div class="guest-book-block">
+				 <form action="{{ url_for('add_post') }}" method="POST">
+
+						<input class="form-control" name="name" id="name" placeholder="Иван">
+
+
+						<textarea class="form-control2" name="text" id="text" rows="3" placeholder="Ваш отзыв"></textarea>
+
+					<button class="btn-otz-hide" type="submit"><img id="btn-otz" src="static/otzb.png" height="65px" weight="130px"></button>
+				 </form>
+			</div>
+
+
+		<div class="card">
+			{% for post in posts %}
+				<div class="card-header">
+					{{ post.name }}
+				</div>
+				<div class="card-body">
+					<blockquote class="blockquote mb-0">
+						<div class="post-text"><p>{{ post.text }}</p></div>
+						<footer class="blockquote-footer">{{ post.updated_on }}</footer>
+					</blockquote>
+				</div>
+			{% endfor %}
+		</div>
+
+	</div>
+	</div>
+
+</main>
+{% endblock %}
+</body>
+</html>
